@@ -9,7 +9,7 @@ import { StyledChart } from './components/chart';
 import ScrollToTop from './components/scroll-to-top';
 
 // ----------------------------------------------------------------------
-
+// hello
 export default function App() {
   return (
     <HelmetProvider>
