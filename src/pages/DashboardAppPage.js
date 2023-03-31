@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { faker } from '@faker-js/faker';
+import Button from 'react-bootstrap/Button'
 // @mui
 import { useTheme } from '@mui/material/styles';
 import { Grid, Container, Typography } from '@mui/material';
@@ -7,6 +9,7 @@ import { Grid, Container, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLightbulb } from '@fortawesome/free-solid-svg-icons';
 import Iconify from '../components/iconify';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 // sections
 import {
@@ -21,10 +24,13 @@ import {
   AppConversionRates,
 } from '../sections/@dashboard/app';
 
+
 // ----------------------------------------------------------------------
+
 
 export default function DashboardAppPage() {
   const theme = useTheme();
+  // const [toggle, settoggle] = useState(true)
 
   return (
     <>
@@ -39,7 +45,8 @@ export default function DashboardAppPage() {
 
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Light" total={"ON"} icon={'ant-design:bulb-outlined'} /><bulbOutlined />
+            <AppWidgetSummary title="Light" total={"hello"}icon={'ant-design:bulb-outlined'}/><bulbOutlined />
+            {/* <Button variant="outline-primary" >Primary</Button> */}
           </Grid>
 
           {/* <Grid item xs={12} sm={6} md={3}>

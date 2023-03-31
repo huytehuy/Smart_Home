@@ -1,0 +1,16 @@
+.button_light{
+    height: 270px;
+    width:200px;
+    border:none;
+    background-color: #d2e9fc;
+    transition: 1s;
+
+}
+.button_light:hover{
+    border: none; 
+    background-color: #d2e9fc;
+    transform:scale(1.1)
+}
+.button_light:first-child:active{
+    background-color: #506c82;
+}
